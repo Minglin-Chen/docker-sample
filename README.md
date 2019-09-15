@@ -49,7 +49,7 @@ if you want to share your docker image in [Docker Hub](https://hub.docker.com/):
 
 ```sh
 sudo docker login
-sudo docker docker_sample YOUR_DOCKER_ID/docker_sample
+sudo docker tag docker_sample YOUR_DOCKER_ID/docker_sample
 sudo docker push YOUR_DOCKER_ID/docker_sample
 ```
 
