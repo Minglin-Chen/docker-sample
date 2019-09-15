@@ -21,7 +21,7 @@ Docker >= 19.03
 ------
 
 ```sh
-cd docker_sample
+cd docker-sample
 sudo docker build -t docker_sample .
 ```
 
