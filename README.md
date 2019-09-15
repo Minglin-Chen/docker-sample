@@ -6,8 +6,6 @@ A sample of building docker image. In this docker image, a pytorch model which h
 
 ### Requirements
 
-------
-
 Ubuntu 18.04
 
 Docker >= 19.03
@@ -18,8 +16,6 @@ Docker >= 19.03
 
 ### Build
 
-------
-
 ```sh
 cd docker-sample
 sudo docker build -t docker_sample .
@@ -28,8 +24,6 @@ sudo docker build -t docker_sample .
 
 
 ### Run
-
-------
 
 ```sh
 sudo docker run -it --rm docker_sample
@@ -51,13 +45,11 @@ sudo docker run --gpus all -it --rm docker_sample
 
 ### Share
 
------
-
 if you want to share your docker image in [Docker Hub](https://hub.docker.com/):
 
 ```sh
 sudo docker login
 sudo docker docker_sample YOUR_DOCKER_ID/docker_sample
-sudo docker push docker_sample
+sudo docker push YOUR_DOCKER_ID/docker_sample
 ```
 
