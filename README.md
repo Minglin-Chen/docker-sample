@@ -10,8 +10,6 @@ Ubuntu 18.04
 
 Docker >= 19.03
 
-[nvidia-docker](https://github.com/NVIDIA/nvidia-docker)
-
 
 
 ### Build
@@ -29,16 +27,11 @@ sudo docker build -t docker_sample .
 sudo docker run -it --rm docker_sample
 ```
 
-if you want to use your own images:
+if you want to use your own images and NVIDIA-GPUs:
+
 
 ```sh
-sudo docker run -v PATH_TO_YOUR_IMAGES:/docker_sample/data -it --rm docker_sample
-```
-
-if you want to use NVIDIA GPUs:
-
-```sh
-sudo docker run --gpus all -it --rm docker_sample
+sudo docker run --gpus all -v PATH_TO_YOUR_IMAGES:/docker_sample/data -it --rm docker_sample
 ```
 
 
