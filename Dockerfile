@@ -1,5 +1,5 @@
-# Use an official Python runtime as a parent image
-FROM python:3.6-slim
+# Use an official PyTorch runtime as a parent image
+FROM pytorch/pytorch
 
 # Set the working directory
 WORKDIR /docker_sample

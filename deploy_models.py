@@ -81,4 +81,9 @@ def deploy(root_path):
 
 if __name__=='__main__':
 
+    if torch.cuda.is_available():
+        print('Use NVIDIA CUDA')
+    else:
+        print('NVIDIA CUDA is NOT FOUND')
+
     deploy(root_path='data')
